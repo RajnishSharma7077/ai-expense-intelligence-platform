@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Expense Categorizer Demo</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; padding: 2rem; }
+    input, textarea { width: 100%; padding: .5rem; margin: .5rem 0; }
+    button { padding: .5rem 1rem; }
+    pre { background:#f6f8fa; padding:1rem; }
+    .result { margin-top:1rem; }
+  </style>
+</head>
+<body>
+  <h1>Expense Categorizer (Demo)</h1>
+  <p>Enter a description and amount, then click <strong>Predict</strong>.</p>
+
+  <label for="description">Description</label>
+  <textarea id="description" rows="2">Starbucks - Cappuccino</textarea>
+
+  <label for="amount">Amount</label>
+  <input id="amount" type="number" step="0.01" value="4.75" />
+
+  <button id="predictBtn">Predict</button>
+
+  <div class="result" id="result"></div>
+
+  <h2>Batch example</h2>
+  <p>Submit multiple items as JSON array (example prefilled)</p>
+  <textarea id="batch" rows="6">[{"description":"Uber - ride to airport","amount":23.5},{"description":"Amazon Marketplace - headphones","amount":59.99}]</textarea>
+  <button id="batchBtn">Predict Batch</button>
+  <div id="batchResult"></div>
+
+  <script src="/main.js"></script>
+</body>
+</html>

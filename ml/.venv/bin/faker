@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/Users/rajnish_sharma/Desktop/my github projects/ai expense intelligence platform/ml/.venv/bin/python3" "$0" "$@"
+' '''
+import sys
+from faker.cli import execute_from_command_line
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(execute_from_command_line())

@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+.DS_Store
+npm-debug.log*
+backend/.env
+frontend/.env
+frontend/dist/
+backend/.cache/
+.vite/
+coverage/
+*.log
