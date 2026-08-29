@@ -10,3 +10,6 @@ backend/.cache/
 .vite/
 coverage/
 *.log
+
+**/.venv/
+**/node_modules/
